@@ -10,6 +10,13 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 export GIT_EDITOR="nvim"
 
+# Installation zsh
+# sudo pacman -S zsh
+# chsh -s $(which zsh)
+# log ud og ind igen
+# https://github.com/ohmyzsh/ohmyzsh
+#
+#
 # vi mode
 # bindkey -v
 # export KEYTIMEOUT=1
