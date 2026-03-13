@@ -237,3 +237,9 @@ egl-wayland
 
 evt tjek:
 https://wiki.hypr.land/Nvidia/
+
+NOTER:
+credit to john ling:
+https://www.johnling.me/blog/Hyprland-Guide
+
+https://wiki.archlinux.org/title/Installation_guide
