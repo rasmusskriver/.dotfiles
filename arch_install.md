@@ -243,3 +243,37 @@ credit to john ling:
 https://www.johnling.me/blog/Hyprland-Guide
 
 https://wiki.archlinux.org/title/Installation_guide
+
+## packages for hyprland
+
+sudo pacman -S firefox alacritty dolphin pipewire wireplumber pipewire-audio pipewire-pulse dunst xdg-desktop-portal-hyprland hyprpolkitagent hyprpaper hyprlock hypridle qt5-wayland qt6-wayland waybar rofi feh kvantum qt5ct qt6ct nwg-look bluez bluez-utils blueman sof-firmware wl-clipboard sddm
+
+# Explanation of packages
+
+```
+firefox: Web browser
+alacritty: Terminal
+dolphin: GUI File Manager
+pipewire: Sound server for getting... sound
+wireplumber (needed): Session and policy manager for pipewire
+pipewire-audio: Audio support for pipewire
+pipewire-pulse: Pipewire replacement for pulseaudio (common sound server on Linux)
+dunst: Daemon used for displaying notifications such as Discord messages or Spotify song changes
+xdg-desktop-portal-hyprland: Implementation of an xdg-desktop-portal for Hyprland. Explanation of portals can be found at https://wiki.archlinux.org/title/XDG_Desktop_Portal
+hyprpolkitagent: Polkit authentication daemon. Needed for GUI apps to request elevated permissions.
+hyprpaper: Used for setting and changing wallpapers in Hyprland
+hyprlock: Screen locker for Hyprland
+hypridle: Run scripts when your device goes idle. This can be ignored if you don't want your device to sleep such as a desktop
+qt5-wayland and qt6-wayland: Libraries for QT applications to work under wayland. QT is a framework for building GUI apps in C++.
+waybar: Menubar for Wayland systems.
+rofi: Application launcher
+feh: Simple image viewer
+kvantum: Used for theming Dolphin
+qt5ct and qt6ct: Used for theming QT5 and QT6 apps
+nwg-look: Used for theming Gnome apps
+bluez and bluez-utils: Bluetooth support
+blueman: GUI for connecting to Bluetooth devices
+sof-firmware: Some **laptops** may need this for their speakers to work
+wl-clipboard: Clipboard manager for Wayland
+sddm: Login screen
+```
