@@ -37,7 +37,7 @@ copy_item() {
     fi
 }
 
-# Liste over filer
+# Liste over standard dotfiles
 FILES=(".alacritty.toml" ".tmux.conf" ".zshrc" ".bashrc")
 for file in "${FILES[@]}"; do
     copy_item "$DOTFILES/$file" "$HOME/$file"
@@ -48,5 +48,9 @@ copy_item "$DOTFILES/scripts" "$HOME/.local/scripts"
 
 # Klon nvim repo
 copy_item "$DOTFILES/nvim" "$HOME/.config/nvim"
+
+# Kopier hyprland.conf til ~/.config/hypr/
+HYPR_CONFIG_DIR="$HOME/.config/hypr"
+copy_item "$DOTFILES/hyprland.conf" "$HYPR_CONFIG_DIR/hyprland.conf"
 
 echo "Done!"
