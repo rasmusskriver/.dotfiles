@@ -92,21 +92,23 @@ pacman -S vim sudo iwd dhcpcd git base-devel networkmanager fastfetch
 
 # Packages explained:
 
-# vim: Text editor we will use later in the guide
+```
+vim: Text editor we will use later in the guide
 
-# sudo: Temporarily grants a non-root user root privileges
+sudo: Temporarily grants a non-root user root privileges
 
-# iwd: CLI tool to connect to WiFi
+iwd: CLI tool to connect to WiFi
 
-# dhcpcd: DHCP client (we'll enable this later to get internet access)
+dhcpcd: DHCP client (we'll enable this later to get internet access)
 
-# git: Version control software we'll use to download yay (AUR helper) later
+git: Version control software we'll use to download yay (AUR helper) later
 
-# base-devel: Key packages such as gcc and make needed to build from the AUR
+base-devel: Key packages such as gcc and make needed to build from the AUR
 
-# networkmanager: dhcpcd is our DHCP client however we still need network manager to work alongside it for internet access
+networkmanager: dhcpcd is our DHCP client however we still need network manager to work alongside it for internet access
 
-# fastfetch: Show people that you use Arch btw (neofetch er dødt)
+fastfetch: Show people that you use Arch btw (neofetch er dødt)
+```
 
 You should also install microcode for either your Intel or AMD CPU.
 
