@@ -90,7 +90,7 @@ arch-chroot /mnt
 
 pacman -S vim sudo iwd dhcpcd git base-devel networkmanager fastfetch
 
-# Packages explained:
+## Packages explained:
 
 ```
 vim: Text editor we will use later in the guide
