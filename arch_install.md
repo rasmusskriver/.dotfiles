@@ -31,6 +31,7 @@ Now enter these keys
 
 (any prompts you receive about the filesystem containing a "signature" just answer yes "Y")
 
+```
 n # Make a new partition this will be our EFI system partition (ESP)
 ENTER
 ENTER
@@ -48,6 +49,7 @@ ENTER
 ENTER
 w
 ENTER
+```
 
 Formatting the Disk
 
