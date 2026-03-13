@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# tmux-sessionizer.sh
+if [[ -z "$TMUX" ]]; then
+  if ! tmux has-session -t batman 2>/dev/null; then
+    tmux new-session -s batman
+  else
+    tmux attach-session -t batman
+  fi
+else
+  if ! tmux has-session -t batman 2>/dev/null; then
+    tmux new-session -s batman -d -c ~
+  fi
+  tmux switch-client -t batman
+fi
