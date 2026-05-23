@@ -19,7 +19,7 @@ hl.monitor({
     output   = "DP-2",
     mode     = "2560x1440@180",
     position = "auto",
-    scale    = 1.25,
+    scale    = 1,
 })
 
 hl.monitor({
@@ -40,7 +40,9 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "alacritty"
 local fileManager = "dolphin"
-local menu        = "rofi -show drun"
+local menu        = "rofi -show drun -show-icons"
+local googeldrev  = "google-chrome-stable --app=https://drive.google.com/drive/home"
+local googelkeep  = "google-chrome-stable --app=https://keep.google.com"
 
 
 -------------------
@@ -262,6 +264,10 @@ hl.device({
 ---------------------
 
 local mainMod = "ALT" -- Sets "Windows" key as main modifier
+
+
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(googeldrev))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(googelkeep))
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
