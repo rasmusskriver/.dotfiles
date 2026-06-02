@@ -8,6 +8,7 @@
 -- You can (and should!!) split this configuration into multiple files
 -- Create your files separately and then require them like this:
 -- require("myColors")
+--
 
 
 ------------------
@@ -38,7 +39,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "alacritty"
+local terminal    = "ghostty"
 local fileManager = "dolphin"
 local menu        = "rofi -show drun -show-icons"
 local googeldrev  = "google-chrome-stable --app=https://drive.google.com/drive/home"
@@ -54,7 +55,7 @@ local googelkeep  = "google-chrome-stable --app=https://keep.google.com"
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
--- hl.on("hyprland.start", function () 
+-- hl.on("hyprland.start", function ()
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
@@ -265,6 +266,8 @@ hl.device({
 
 local mainMod = "ALT" -- Sets "Windows" key as main modifier
 
+
+hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
 
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(googeldrev))
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(googelkeep))
